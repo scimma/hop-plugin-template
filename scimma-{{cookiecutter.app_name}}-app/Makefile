@@ -13,12 +13,13 @@ help :
 	@echo '  make upload                upload to PyPI'
 	@echo
 
-VERSION ?= $(shell python setup.py --version)
+PYTHON = python
+VERSION ?= $(shell $(PYTHON) setup.py --version)
 REPO_URL = {{ cookiecutter.git_url }}
 
 .PHONY: test
 test :
-	python -m pytest -v --cov=scimma.apps.{{ cookiecutter.app_name }}
+	$(PYTHON) -m pytest -v --cov=scimma.apps.{{ cookiecutter.app_name }}
 
 .PHONY: lint
 lint :
@@ -44,7 +45,7 @@ changelog :
 
 .PHONY: dist
 dist :
-	python setup.py sdist bdist_wheel	
+	$(PYTHON) setup.py sdist bdist_wheel
 
 .PHONY: dist-check
 dist-check:
