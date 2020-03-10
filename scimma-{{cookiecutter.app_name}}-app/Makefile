@@ -18,7 +18,7 @@ REPO_URL = {{ cookiecutter.git_url }}
 
 .PHONY: test
 test :
-	python -m pytest -v --cov=scimma.client
+	python -m pytest -v --cov=scimma.apps.{{ cookiecutter.app_name }}
 
 .PHONY: lint
 lint :
@@ -31,7 +31,7 @@ lint :
 format :
 	# show diff via black
 	black tests --diff
-	black scimma/client --diff
+	black scimma/apps/{{ cookiecutter.app_name }} --diff
 
 .PHONY: doc
 doc :

@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import find_namespace_packages, setup
 
 # read in README
 this_dir = os.path.abspath(os.path.dirname(__file__))
@@ -25,7 +25,7 @@ setup(
     author_email = '{{ cookiecutter.author_email }}',
     license = 'BSD 3-Clause',
 
-    packages = ['scimma.apps.{{ cookiecutter.app_name }}'],
+    packages = find_namespace_packages(include=['scimma.apps.*']),
 
     entry_points = {
         'console_scripts': [
