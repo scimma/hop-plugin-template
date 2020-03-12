@@ -19,7 +19,7 @@ REPO_URL = {{ cookiecutter.git_url }}
 
 .PHONY: test
 test :
-	$(PYTHON) -m pytest -v --cov=scimma.apps.{{ cookiecutter.app_name }}
+	$(PYTHON) setup.py test
 
 .PHONY: lint
 lint :
