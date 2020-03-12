@@ -1,7 +1,7 @@
 {
   "app_name": "example",
   "app_description": "An example SCiMMA application",
-  "author_name": "Carmen Sandiego",
-  "author_email": "carmen@sandiego.org",
+  "author_name": "Me Myself",
+  "author_email": "me@example.com",
   "git_url": "https://www.github.com/example/url"
 }
