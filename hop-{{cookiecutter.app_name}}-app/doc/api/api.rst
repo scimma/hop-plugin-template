@@ -1,6 +1,6 @@
 .. _api:
 
-scimma-{{ cookiecutter.app_name }}-app API
+hop-{{ cookiecutter.app_name }}-app API
 ##########################################
 
 .. toctree::

@@ -32,7 +32,7 @@ lint :
 format :
 	# show diff via black
 	black tests --diff
-	black scimma/apps/{{ cookiecutter.app_name }} --diff
+	black hop/apps/{{ cookiecutter.app_name }} --diff
 
 .PHONY: doc
 doc :

@@ -22,7 +22,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 # -- Project information -----------------------------------------------------
 
-project = u'scimma-{{ cookiecutter.app_name }}-app'
+project = u'hop-{{ cookiecutter.app_name }}-app'
 copyright = u'2020, {{ cookiecutter.author_name }}'
 author = u'{{ cookiecutter.author_name }}'
 
@@ -120,4 +120,4 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'scimma-clientdoc'
+htmlhelp_basename = 'hop-clientdoc'

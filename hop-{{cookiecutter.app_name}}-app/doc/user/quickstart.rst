@@ -7,7 +7,7 @@ Quickstart
 
 .. code:: python
 
-    from scimma.apps import {{ cookiecutter.app_name }}
+    from hop.apps import {{ cookiecutter.app_name }}
 
 
 This will do something.

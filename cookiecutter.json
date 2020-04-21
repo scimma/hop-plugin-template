@@ -1,6 +1,6 @@
 {
   "app_name": "example",
-  "app_description": "An example SCiMMA application",
+  "app_description": "An example Hop application",
   "author_name": "Me Myself",
   "author_email": "me@example.com",
   "git_url": "https://www.github.com/example/url"
