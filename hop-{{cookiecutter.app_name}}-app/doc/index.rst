@@ -1,4 +1,4 @@
-scimma-{{ cookiecutter.app_name }}-app documentation
+hop-{{ cookiecutter.app_name }}-app documentation
 ====================================================
 
 User's Guide

@@ -8,7 +8,7 @@ with open(os.path.join(this_dir, 'README.md'), 'rb') as f:
 
 # requirements
 install_requires = [
-    "scimma-client >= 0.0.4",
+    "hop-client >= 0.0.5",
 ]
 extras_require = {
     'dev': ['pytest', 'pytest-console-scripts', 'pytest-cov', 'flake8', 'flake8-black'],
@@ -16,7 +16,7 @@ extras_require = {
 }
 
 setup(
-    name = 'scimma-{{ cookiecutter.app_name }}-app',
+    name = 'hop-{{ cookiecutter.app_name }}-app',
     description = '{{ cookiecutter.app_description }}',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
@@ -25,11 +25,11 @@ setup(
     author_email = '{{ cookiecutter.author_email }}',
     license = 'BSD 3-Clause',
 
-    packages = ['scimma.apps.{{ cookiecutter.app_name }}'],
+    packages = ['hop.apps.{{ cookiecutter.app_name }}'],
 
     entry_points = {
         'console_scripts': [
-            'scimma-{{ cookiecutter.app_name }} = scimma.apps.{{ cookiecutter.app_name }}.__main__:main',
+            'hop-{{ cookiecutter.app_name }} = hop.apps.{{ cookiecutter.app_name }}.__main__:main',
         ],
     },
 
@@ -38,7 +38,7 @@ setup(
     extras_require = extras_require,
     setup_requires = ['setuptools_scm'],
     use_scm_version = {
-        'write_to': 'scimma/apps/{{ cookiecutter.app_name }}/_version.py'
+        'write_to': 'hop/apps/{{ cookiecutter.app_name }}/_version.py'
     },
 
     classifiers = [
