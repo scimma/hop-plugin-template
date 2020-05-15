@@ -36,9 +36,6 @@ setup(
     python_requires = '>=3.6.*',
     install_requires = install_requires,
     extras_require = extras_require,
-    use_scm_version = {
-        'write_to': 'hop/apps/{{ cookiecutter.app_name }}/_version.py'
-    },
 
     classifiers = [
         'Development Status :: 2 - Pre-Alpha',
