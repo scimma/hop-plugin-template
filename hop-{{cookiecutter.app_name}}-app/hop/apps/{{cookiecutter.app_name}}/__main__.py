@@ -7,10 +7,10 @@ from . import __version__
 
 
 def _set_up_parser():
-    """Set up parser for scimma app entry point.
+    """Set up parser for hop-{{ cookiecutter.app_name }} app entry point.
 
     """
-    parser = argparse.ArgumentParser(prog="scimma-{{ cookiecutter.app_name }}")
+    parser = argparse.ArgumentParser(prog="hop-{{ cookiecutter.app_name }}")
     parser.add_argument(
         "--version", action="version", version=f"%(prog)s version {__version__}",
     )
@@ -21,7 +21,7 @@ def _set_up_parser():
 
 
 def _set_up_cli():
-    """Set up CLI boilerplate for scimma app entry point.
+    """Set up CLI boilerplate for hop-{{ cookiecutter.app_name }} app entry point.
 
     """
     signal.signal(signal.SIGINT, signal.SIG_DFL)

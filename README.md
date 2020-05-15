@@ -1,6 +1,6 @@
 # hop-app-template
 
-A cookiecutter template to create a SCiMMA-based application using `hop-client`.
+A cookiecutter template to create a Hop-based application using `hop-client`.
 
 ### Quickstart
 
