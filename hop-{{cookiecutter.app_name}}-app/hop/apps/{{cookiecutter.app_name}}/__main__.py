@@ -3,7 +3,7 @@
 import argparse
 import signal
 
-# from . import __version__
+from . import __version__
 
 
 def _set_up_parser():
@@ -11,9 +11,9 @@ def _set_up_parser():
 
     """
     parser = argparse.ArgumentParser(prog="hop-{{ cookiecutter.app_name }}")
-#     parser.add_argument(
-#         "--version", action="version", version=f"%(prog)s version {__version__}",
-#     )
+    parser.add_argument(
+        "--version", action="version", version=f"%(prog)s version {__version__}",
+    )
 
     # my arguments here
 
