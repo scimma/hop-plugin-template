@@ -11,8 +11,18 @@ install_requires = [
     "hop-client >= 0.0.5",
 ]
 extras_require = {
-    'dev': ['pytest', 'pytest-console-scripts', 'pytest-cov', 'flake8', 'flake8-black'],
-    'docs': ['sphinx', 'sphinx_rtd_theme', 'sphinxcontrib-programoutput'],
+    'dev': [
+        'autopep8',
+        'flake8',
+        'pytest >= 5.0, < 5.4',
+        'pytest-console-scripts',
+        'pytest-cov',
+    ],
+    'docs': [
+        'sphinx',
+        'sphinx_rtd_theme',
+        'sphinxcontrib-programoutput',
+    ],
 }
 
 setup(
@@ -36,6 +46,7 @@ setup(
     python_requires = '>=3.6.*',
     install_requires = install_requires,
     extras_require = extras_require,
+    zip_safe = False,
 
     classifiers = [
         'Development Status :: 2 - Pre-Alpha',
