@@ -1,4 +1,4 @@
-hop-{{ cookiecutter.app_name }}-app documentation
+hop-plugin-{{ cookiecutter.plugin_name }} documentation
 ====================================================
 
 User's Guide

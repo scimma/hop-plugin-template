@@ -22,7 +22,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 # -- Project information -----------------------------------------------------
 
-project = u'hop-{{ cookiecutter.app_name }}-app'
+project = u'hop-plugin-{{ cookiecutter.plugin_name }}'
 copyright = u'2020, {{ cookiecutter.author_name }}'
 author = u'{{ cookiecutter.author_name }}'
 

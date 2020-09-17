@@ -1,6 +1,6 @@
 {
-  "app_name": "example",
-  "app_description": "An example Hop application",
+  "plugin_name": "example",
+  "plugin_description": "An example Hop plugin",
   "author_name": "Me Myself",
   "author_email": "me@example.com",
   "git_url": "https://www.github.com/example/url"

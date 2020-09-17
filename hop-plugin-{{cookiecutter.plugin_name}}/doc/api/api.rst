@@ -1,9 +1,9 @@
 .. _api:
 
-hop-{{ cookiecutter.app_name }}-app API
+hop-plugin-{{ cookiecutter.plugin_name }} API
 ##########################################
 
 .. toctree::
     :maxdepth: 2
 
-    example
+    {{ cookiecutter.plugin_name }}

@@ -8,7 +8,7 @@ with open(os.path.join(this_dir, 'README.md'), 'rb') as f:
 
 # requirements
 install_requires = [
-    "hop-client >= 0.0.5",
+    "hop-client >= 0.2",
 ]
 extras_require = {
     'dev': [
@@ -26,8 +26,8 @@ extras_require = {
 }
 
 setup(
-    name = 'hop-{{ cookiecutter.app_name }}-app',
-    description = '{{ cookiecutter.app_description }}',
+    name = 'hop-plugin-{{ cookiecutter.plugin_name }}',
+    description = '{{ cookiecutter.plugin_description }}',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
     url = '{{ cookiecutter.git_url }}',
@@ -35,13 +35,10 @@ setup(
     author_email = '{{ cookiecutter.author_email }}',
     license = 'BSD 3-Clause',
 
-    packages = ['hop.apps.{{ cookiecutter.app_name }}'],
+    packages = ['hop.plugins'],
 
-    entry_points = {
-        'console_scripts': [
-            'hop-{{ cookiecutter.app_name }} = hop.apps.{{ cookiecutter.app_name }}.__main__:main',
-        ],
-    },
+    entry_points = {'hop_plugin': ["{{ cookiecutter.plugin_name }}-plugin = hop.plugins.{{ cookiecutter.plugin_name }}"]},
+    version = '0.0.1',
 
     python_requires = '>=3.6.*',
     install_requires = install_requires,
